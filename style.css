@@ -1,0 +1,18 @@
+#container{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    border: 0px solid black;
+}
+
+#container div{
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    border: 0.1px solid black;
+}
+
+#container div div:hover{
+    background: black;
+}

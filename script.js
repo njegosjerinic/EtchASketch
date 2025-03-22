@@ -1,7 +1,12 @@
 document.addEventListener('DOMContentLoaded',function(){
     const mainDiv = document.getElementById('container');
+    const sizeInput = document.getElementById('sizeInput');
+    let i;
     
-    let i = 16;
+    sizeInput.addEventListener('click', function(){
+        prompt
+    })
+    
 
     for(let j = 0;j <= i;j++){
         let miniDivs = document.createElement('div');

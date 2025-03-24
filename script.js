@@ -6,9 +6,13 @@ document.addEventListener('DOMContentLoaded',function(){
     
     sizeInput.addEventListener('click', function(){
         i = Number(prompt("Enter the number of spaces"));
+        if(i > 100){
+            alert("Number too big");
+            return;
+        }else{
         mainDiv.innerHTML = "";
         sketchsMaker(i);
-        
+        }
     })
     
     let sketchsMaker = function(i){
@@ -27,7 +31,10 @@ document.addEventListener('DOMContentLoaded',function(){
                 miniDivs.appendChild(ultraminiDivs);
 
                 ultraminiDivs.addEventListener("mouseenter",(event) =>{
-                    event.target.style.background = "black";
+                    let random = Math.floor(Math.random() * 3);
+                    let colors = ["red", "green", "blue"];
+                    
+                    ultraminiDivs.style.background = colors[random];
                 });
             }
         }

@@ -9,20 +9,23 @@ document.addEventListener('DOMContentLoaded',function(){
         if(i > 100){
             alert("Number too big");
             return;
+        }else if(i == 0){
+            i = 16;
         }else{
         mainDiv.innerHTML = "";
         sketchsMaker(i);
         }
+        console.log(i)
     })
     
     let sketchsMaker = function(i){
-        for(let j = 0;j <= i;j++){
+        for(let j = 0;j < i;j++){
             let miniDivs = document.createElement('div');
         
             miniDivs.className = "bigdivs";
             mainDiv.appendChild(miniDivs)
 
-            for(let k = 0; k <= i;k++){
+            for(let k = 0; k < i;k++){
                 let ultraminiDivs = document.createElement('div');
 
                 ultraminiDivs.style.height = "100%";
